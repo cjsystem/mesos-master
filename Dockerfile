@@ -14,5 +14,4 @@ RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 
 EXPOSE 5050
-
 CMD ["/usr/sbin/mesos-master"]
