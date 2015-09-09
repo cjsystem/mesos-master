@@ -11,4 +11,4 @@ VOLUME /tmp/mesos
 
 COPY entrypoint.sh /
 
-ENTRYPOINT ["sudo /entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
