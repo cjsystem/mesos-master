@@ -5,8 +5,8 @@ PRINCIPAL=${PRINCIPAL:-root}
 if [ -n "$SECRET" ]; then
     export MESOS_AUTHENTICATE=true
     export MESOS_AUTHENTICATE_SLAVES=true
-    sudo touch /tmp/credentials
-    sudo chmod 600 /tmp/credentials
+    touch /tmp/credentials
+    chmod 600 /tmp/credentials
     echo -n "$PRINCIPAL $SECRET" > /tmp/credentials
     export MESOS_CREDENTIALS=/tmp/credentials
 fi

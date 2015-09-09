@@ -9,8 +9,6 @@ ENV MESOS_WORK_DIR /tmp/mesos
 
 VOLUME /tmp/mesos
 
-EXPOSE 5050
-
 COPY entrypoint.sh /
 
 ENTRYPOINT ["/entrypoint.sh"]
